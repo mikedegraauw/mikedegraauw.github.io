@@ -32,8 +32,9 @@
 	var date = new Date();
 		var hour = date.getHours();
 		var minutes = date.getMinutes();
-		var localtime = date.toLocaleTimeString();
-		if (hour == 11 && minutes >= 30 && minutes <= 45)  {
+		var day = date.getDay();\
+		var cheese_house_days = [2, 3, 5];
+		if (hour == 11 && minutes >= 30 && minutes <= 45 && cheese_house_days.indexOf(day) > -1 )  {
 	    document.getElementById('Kaashuis').innerHTML = "<img src='images/undraw_Hamburger_8ge6.png' height='400' width='600'><h2>Let's go! 11:45!</h2>"
 		}
 		else {
