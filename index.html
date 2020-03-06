@@ -3,7 +3,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Moeten we al eten, of moeten we al drinken?</title>
 	<style>		h1 {
-			color: rgb(51, 55, 64);
+			color: rgb(107, 222, 120);
 			font-family: "Melbourne", sans-serif;
 			font-size: 36px;
 			font-weight: 400;
@@ -11,20 +11,13 @@
 			margin-top: 0px;
 			}
 			h2 {
-			color: rgb(54, 201 ,71);
+			color: rgb(107, 222, 120);
 			font-family: "Melbourne", sans-serif;
 			font-size: 30px;
 			font-weight: 400;
 			line-height: 36px;
 			margin-top: 0px;
 			}
-			.yes {
-			color: rgb(54, 201, 71);
-			}
-			.no {
-			color: rgb(237, 33, 87);
-			}
-			
 	</style>
 </head>
 <body>
@@ -39,6 +32,7 @@
 	var date = new Date();
 		var hour = date.getHours();
 		var minutes = date.getMinutes();
+
 		var day = date.getDay();
 		var cheese_house_days = [2, 3, 5];
 		if (hour == 11 && minutes >= 30 && minutes <= 45 && cheese_house_days.indexOf(day) > -1 )  {
@@ -59,6 +53,7 @@
 	var date = new Date();
 		var hour = date.getHours();
 		if (hour >= 16 || hour <= 4) {
+
 	    document.getElementById('Bier').innerHTML = "<img src='images/undraw_having_fun_iais.png' height='400' width='600'><h2 class='yes'>Ja, het is tijd voor bier! Proost!</h2>"
 		}
 		else {
