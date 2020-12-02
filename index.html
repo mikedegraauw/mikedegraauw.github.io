@@ -34,6 +34,17 @@
 	<div id="Google">
 	</div>
 </center>
+<script type="text/javascript">
+	var date = new Date();
+		var hour = date.getDate();
+		if (date >= 2020-12-01 || date <= 2021-12-01) {
+
+	    document.getElementById('Google').innerHTML = "<img src='images/true_logo.png' height='400' width='600'><h2 class='no'>Rustagh! We hebben tot 1 december 2021.</h2>"
+		}
+		else {
+	    document.getElementById('Google').innerHTML = "<img src='images/gcp_logo.png' height='150' width='600'><h2 class='yes'>Ja, als het goed is wel...</h2>"
+		}
+</script>
 <p id="counter"></p>
 <script>
 var countDownDate = new Date("Dec 1, 2021 09:00:00").getTime();
@@ -51,17 +62,6 @@ var x = setInterval(function() {
     document.getElementById("counter").innerHTML = "EXPIRED";
   }
 }, 1000);
-</script>
-<script type="text/javascript">
-	var date = new Date();
-		var hour = date.getDate();
-		if (date >= 2020-12-01 || date <= 2021-12-01) {
-
-	    document.getElementById('Google').innerHTML = "<img src='images/true_logo.png' height='400' width='600'><h2 class='no'>Rustagh! We hebben tot 1 december 2021.</h2>"
-		}
-		else {
-	    document.getElementById('Google').innerHTML = "<img src='images/gcp_logo.png' height='150' width='600'><h2 class='yes'>Ja, als het goed is wel...</h2>"
-		}
 </script>
 <center>
 	<h1>
