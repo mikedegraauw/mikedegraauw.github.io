@@ -1,7 +1,7 @@
 <html lang="nl-nl">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Moeten we al eten, of moeten we al drinken?</title>
+	<title>Zijn we al over naar GCP, moeten we al eten, of moeten we al drinken?</title>
 	<style>		h1 {
 			color: rgb(51, 55, 64);
 			font-family: "Melbourne", sans-serif;
@@ -27,6 +27,24 @@
 	</style>
 </head>
 <body>
+<center>
+	<h1>
+		Zijn we al over naar Google? 
+	</h1>
+	<div id="Google">
+	</div>
+</center>
+<script type="text/javascript">
+	var date = new Date();
+		var hour = date.getHours();
+		if (hour >= 16 || hour <= 4) {
+
+	    document.getElementById('Google').innerHTML = "<img src='images/gcp_logo.png' height='400' width='600'><h2 class='yes'>Ja, als het goed is wel...</h2>"
+		}
+		else {
+	    document.getElementById('Google').innerHTML = "<img src='images/true_logo.png' height='400' width='600'><h2 class='no'>Rustagh! We hebben tot 1 december 2021.</h2>"
+		}
+</script>	
 <center>
 	<h1>
 		Moeten we al naar het Kaashuis? 
