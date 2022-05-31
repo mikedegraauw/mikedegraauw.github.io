@@ -30,45 +30,7 @@
 			}
 	</style>
 </head>
-<body>
-<center>
-	<h1>
-		Zijn we al over naar Google Cloud Platform? 
-	</h1>
-	<div id="Google">
-	</div>
-</center>
-<script type="text/javascript">
-	var date = new Date();
-		var hour = date.getDate();
-		if (date >= 2020-12-01 || date <= 2021-12-01) {
-
-	    document.getElementById('Google').innerHTML = "<img src='images/true_logo.png' height='400' width='600'><h2 class='no'>Rustagh! We hebben tot 1 december 2021.</h2>"
-		}
-		else {
-	    document.getElementById('Google').innerHTML = "<img src='images/gcp_logo.png' height='150' width='600'><h2 class='yes'>Ja, als het goed is wel...</h2>"
-		}
-	</script>
-	<center>
-<p id="counter"></p>
-<script>
-var countDownDate = new Date("Dec 1, 2021 09:00:00").getTime();
-var x = setInterval(function() {
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  document.getElementById("counter").innerHTML = days + " dagen " + hours + " uren "
-  + minutes + " minuten " + seconds + " seconden ";
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("counter").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-</center>	
+<body>	
 <center>
 	<h1>
 		Moeten we al naar het Kaashuis? 
